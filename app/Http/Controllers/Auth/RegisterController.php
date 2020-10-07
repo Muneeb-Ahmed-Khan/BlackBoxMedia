@@ -98,7 +98,7 @@ class RegisterController extends Controller
             //After user is created, it auto logins, but we will directly logout after user is created.
             Auth::logout();
             
-            return redirect('/register')->withErrors(["success" => "Registration Sucessfull"]);
+            return back()->withErrors(["success" => "Registration Sucessfull"]);
         }
     }
 
