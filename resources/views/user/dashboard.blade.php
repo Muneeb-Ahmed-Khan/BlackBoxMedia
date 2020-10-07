@@ -16,14 +16,16 @@
         <!-- Header -->
         <div class="header" style="background-image: url({{asset('images/web.png')}});">
             <div class="navbar">
-                <button class="button login vertical-center" data-toggle="modal" data-target="#loginModal">LOGIN</button>
+                <form id="logout-form" action="{{ url('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                </form>
+                <button class="button login vertical-center" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">LOGOUT</button>
             </div>
 
             <div class="mainBox">
                 <div class="center">
                     <h3 class="white-bold-text" style="font-size: 22px;">Watch thousands of shows and movies, with plans starting at $40/month.</h3>
                     <br>
-                    <button class="subscribe" data-toggle="modal" data-target="#exampleModalCenter">SUBSCRIBE</button>
                 </div>
             </div>
         </div>
@@ -151,119 +153,6 @@
                 
             </div>
         </div>
-
-
-
-        
-        <!-- Register Modal -->
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">SignUp</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            
-                <form class="card"  method="POST" action="{{ url('register') }}">
-                    @csrf
-
-                        <div class="modal-body">
-                            <div class="form-group">
-                                <input type="text" name="name" style="font-size: unset!important;" class="form-control form-control-lg" required placeholder="Username">
-                                @if ($errors->has('name'))
-                                <div class="alert alert-danger error-message">{{ $errors->first('name') }}</div>
-                                @endif
-                            </div>
-
-                            <div class="form-group">
-                                <input type="email" name="email" style="font-size: unset!important;" class="form-control form-control-lg"  required placeholder="Email">
-                                @if ($errors->has('email'))
-                                    <div class="alert alert-danger error-message">{{ $errors->first('email') }}</div>
-                                @endif
-                            </div>
-
-                            <div class="form-group">
-                                <input type="password" name="password" style="font-size: unset!important;" class="form-control form-control-lg" required placeholder="Password">
-                                @if ($errors->has('password'))
-                                    <div class="alert alert-danger error-message">{{ $errors->first('password') }}</div>
-                                @endif
-                            </div>
-
-                            <div class="form-group">
-                                <input type="password" name="password_confirmation" style="font-size: unset!important;" class="form-control form-control-lg" required name="confirmPassword" placeholder="Confirm Password">
-                                @if ($errors->has('password'))
-                                    <div class="alert alert-danger error-message">{{ $errors->first('password') }}</div>
-                                @endif
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="submit" name="registerForm" class="btn btn-primary">Confirm</button>
-                        </div>
-                </form>
-            </div>
-        </div>
-        </div>
-
-
-
-
-
-
-
-
-
-        <!-- Login Modal -->
-        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Login</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-
-                @if ($errors->has('invalid'))
-                    <div class="alert alert-danger">{{ $errors->first('invalid') }}</div>
-                @endif
-
-                @if ($errors->has('email'))
-                    @foreach ($errors->get('email') as $message)
-                        <div class="alert alert-danger error-message">{{ $message }}</div>
-                    @endforeach
-                @endif
-
-                <form class="card"  method="post" action="{{ url('login') }}">
-                    @csrf
-                    <div class="modal-body">
-                            
-                            <div class="form-group">
-                                <input type="email" name="email" style="font-size: unset!important;" class="form-control form-control-lg"  required placeholder="Email">
-                            </div>
-
-                            <div class="form-group">
-                                <input type="password" name="password" style="font-size: unset!important;" class="form-control form-control-lg" required placeholder="Password">
-                            </div>
-
-                            <div class="form-group" hidden>
-                                <select required class="form-control" name="role">
-                                        <option value="user">User</option>
-                                </select>
-                            </div>
-
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="submit" name="loginForm" class="btn btn-primary">Confirm</button>
-                        </div>
-                </form>
-            </div>
-        </div>
-        </div>
-
 
 
     </body>
