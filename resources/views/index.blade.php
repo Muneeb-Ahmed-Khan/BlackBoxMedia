@@ -21,7 +21,8 @@
 
             <div class="mainBox">
                 <div class="center">
-                    <h3 class="white-bold-text" style="font-size: 22px;">Watch thousands of shows and movies, with plans starting at $40/month.</h3>
+                    <h3 class="white-bold-text" style="font-size: 22px;">$40/Month over 285 HD channels + All Sports Packages + Unlimited PPV.</h3>
+                    <h5 class="white-bold-text" > NO FEES | NO CONTRACT | NO CREDIT CHECKS</h5>
                     <br>
                     <button class="subscribe" data-toggle="modal" data-target="#exampleModalCenter">SUBSCRIBE</button>
                 </div>
@@ -102,15 +103,15 @@
                         <td><span class="plan-feature__bullet_default">—</span></td>
                       </tr>
                       <tr>
-                        <td style=" text-align: left; ">Bad credit, no credit, no problem</td>
+                        <td style=" text-align: left; ">No Contracts</td>
                         <td><span class="plan-feature__bullet_default">—</span></td>
                         <td style=" background:#f5f6f7;"><img src="https://www.hulu.com/static/hitch/static/icons/Pricing_Checkmark_black.svg"></td>
                         <td><span class="plan-feature__bullet_default">—</span></td>
                       </tr>
                       <tr>
-                        <td style=" text-align: left; ">Upcoming features</td>
+                        <td style=" text-align: left; ">Unlimited Movies</td>
                         <td><span class="plan-feature__bullet_default">—</span></td>
-                        <td style=" background:#f5f6f7;">Unlimited Movies</td>
+                        <td style=" background:#f5f6f7;"><img src="https://www.hulu.com/static/hitch/static/icons/Pricing_Checkmark_black.svg"></td>
                         <td><span class="plan-feature__bullet_default">—</span></td>
                       </tr>
                       
