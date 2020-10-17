@@ -35,7 +35,7 @@ body{
     font-weight: bold;
     font-family: 'Graphik',Helvetica,Arial,sans-serif;
     text-decoration: none !important;
-    
+
 }
 
 .mainBox{
@@ -72,7 +72,7 @@ body{
 }
 
 .subscribe:hover{
-    padding: 22px 34px;
+    padding: 20px 33px;
 }
 
 
