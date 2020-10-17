@@ -27,13 +27,15 @@ body{
 
 .login{
     
-    right:40px;
+    right: 40px;
     background: transparent;
     border: 0px;
     color: white;
     font-size: inherit;
     font-weight: bold;
     font-family: 'Graphik',Helvetica,Arial,sans-serif;
+    text-decoration: none !important;
+    
 }
 
 .mainBox{
@@ -58,18 +60,19 @@ body{
 }
 
 .subscribe{
-    width: 237px;
-    height: 58px;
+    padding: 17px 30px;
     background: white;
     border: white;
     border-radius: 4px;
     font-size: x-large;
     font-family: sans-serif;
     letter-spacing: 2px;
+    text-decoration: none !important;
+    color: black;
 }
 
 .subscribe:hover{
-    width: 250px;
+    padding: 22px 34px;
 }
 
 
@@ -92,7 +95,7 @@ body{
 .ribbon{
     
     background: linear-gradient(318.68deg, #0F495C 0%, #0D3640 49.72%, #08141F 100%);
-    padding: 34px 40px;
+    /* padding: 34px 40px; */
 }
 
 .row{
@@ -196,4 +199,35 @@ body{
 
 a:hover{
     text-decoration: none;
+}
+
+.mobile-plans-description
+{
+    display: none;
+}
+
+@media only screen and (max-width: 925px) {
+    .plans-internal {
+      width: 100%;
+    }
+
+    .faker{
+        display: none;
+    }
+
+    .mobile-plans-description
+    {
+        display: contents;
+    }
+
+   .table>thead>tr>th{
+       padding: 0px;
+   }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .faker-popular {
+        display: none;
+    }
 }

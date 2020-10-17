@@ -9,38 +9,36 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="main.css">
+
+
     </head>
     <body>
         
         <!-- Header -->
         <div class="header">
             <div class="navbar">
-                <button class="button login vertical-center">LOGIN</button>
+                <a href="#" class="button login vertical-center">LOGIN</a>
             </div>
 
             <div class="mainBox">
                 <div class="center">
                     <h3 class="white-bold-text" style="font-size: 22px;">Watch thousands of shows and movies, with plans starting at $40/month.</h3>
                     <br>
-                    <button class="subscribe">SUBSCRIBE</button>
+                    <a href="#" class="subscribe">SUBSCRIBE</a>
                 </div>
             </div>
         </div>
 
+        
         <!-- Ribbon -->
-        <div class="ribbon">
-            <div class="row">
-                <div>
-                    <img style="width: 65%;" src="images/newb.jpg" role="presentation">
-                </div>
-                <div>
-                    
-                </div>
-                <div style="position: relative;">
-                    <button class="vertical-center subscribe-2" style="right: 0px;">SUBSCRIBE</button>
-                </div>
-            </div>
-        </div>
+        <!-- <div style="background: linear-gradient(318.68deg, #0F495C 0%, #0D3640 49.72%, #08141F 100%);height: 100px;">
+
+            <img style="height: 100px;float: left;" src="images/newb.jpg" role="presentation">
+            <button>subscribe</button>
+            
+        </div> -->
+        
+        
 
         <!-- Promo -->
         <div>
@@ -54,7 +52,7 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th></th>
+                            <th class="faker"></th>
                             <th style=" text-align:center;">
                                 <div>
                                     <div class="plan-head__card-title">Xfinity</div>
@@ -63,7 +61,7 @@
 
                             <th style=" text-align: center; background:#f5f6f7;">
                                 <div>
-                                    <div style="margin: 6px;">
+                                    <div  class="faker-popular"  style="margin: 6px;">
                                         <span class="plan-head__card-badge">MOST POPULAR</span>
                                     </div>
                                     <div class="plan-head__card-title">BlACKBOX Media</div>
@@ -82,42 +80,75 @@
                         </tr>
                       </thead>
                     <tbody>
-                      <tr>
-                        <td style=" text-align: left; ">Monthly Price</td>
-                        <td>$39.99/mo</td>
-                        <td style=" background:#f5f6f7;">$40/mo</td>
-                        <td>$49.99/mo</td>
-                      </tr>
-                      <tr>
-                        <td style=" text-align: left; ">Channels</td>
-                        <td>10</td>
-                        <td style=" background:#f5f6f7;" >255+</td>
-                        <td>160</td>
-                      </tr>
-                      <tr>
-                        <td style=" text-align: left; ">Pay Per View</td>
-                        <td><span class="plan-feature__bullet_default">—</span></td>
-                        <td style=" background:#f5f6f7;"><img src="https://www.hulu.com/static/hitch/static/icons/Pricing_Checkmark_black.svg"></td>
-                        <td><span class="plan-feature__bullet_default">—</span></td>
-                      </tr>
-                      <tr>
-                        <td style=" text-align: left; ">Bad credit, no credit, no problem</td>
-                        <td><span class="plan-feature__bullet_default">—</span></td>
-                        <td style=" background:#f5f6f7;"><img src="https://www.hulu.com/static/hitch/static/icons/Pricing_Checkmark_black.svg"></td>
-                        <td><span class="plan-feature__bullet_default">—</span></td>
-                      </tr>
-                      <tr>
-                        <td style=" text-align: left; ">Upcoming features</td>
-                        <td><span class="plan-feature__bullet_default">—</span></td>
-                        <td style=" background:#f5f6f7;">Unlimited Movies</td>
-                        <td><span class="plan-feature__bullet_default">—</span></td>
-                      </tr>
+
+                       
+                        <tr class="mobile-plans-description">
+                            <td colspan="3" style="padding: 16px; font-size: medium; color: grey;">Monthly Price</td>
+                        </tr>
+                        <tr>
+                            <td class="faker" style=" text-align: left; ">Monthly Price</td>
+                            <td>$39.99/mo</td>
+                            <td style=" background:#f5f6f7;">$40/mo</td>
+                            <td>$49.99/mo</td>
+                        </tr>
+
+                        
+                        <tr class="mobile-plans-description">
+                            <td colspan="3" style="padding: 16px; font-size: medium; color: grey;">Channels</td>
+                        </tr>
+                        <tr>
+                            <td class="faker" style=" text-align: left; ">Channels</td>
+                            <td>10</td>
+                            <td style=" background:#f5f6f7;" >255+</td>
+                            <td>160</td>
+                        </tr>
+
+                        
+                        
+                        
+                        <tr class="mobile-plans-description">
+                            <td colspan="3" style="padding: 16px; font-size: medium; color: grey;">Pay Per View</td>
+                        </tr>
+                        <tr>
+                            <td class="faker" style=" text-align: left; ">Pay Per View</td>
+                            <td><span class="plan-feature__bullet_default">—</span></td>
+                            <td style=" background:#f5f6f7;"><img src="https://www.hulu.com/static/hitch/static/icons/Pricing_Checkmark_black.svg"></td>
+                            <td><span class="plan-feature__bullet_default">—</span></td>
+                        </tr>
+
+
+                        
+                        
+                        
+                        <tr class="mobile-plans-description">
+                            <td colspan="3" style="padding: 16px; font-size: medium; color: grey;">Bad credit, no credit, no problem</td>
+                        </tr>
+                        <tr>
+                            <td class="faker" style=" text-align: left; ">Bad credit, no credit, no problem</td>
+                            <td><span class="plan-feature__bullet_default">—</span></td>
+                            <td style=" background:#f5f6f7;"><img src="https://www.hulu.com/static/hitch/static/icons/Pricing_Checkmark_black.svg"></td>
+                            <td><span class="plan-feature__bullet_default">—</span></td>
+                        </tr>
+
+
+                        
+                        
+                        
+                        <tr class="mobile-plans-description">
+                            <td colspan="3" style="padding: 16px; font-size: medium; color: grey;">Upcoming features</td>
+                        </tr>
+                        <tr>
+                            <td class="faker" style=" text-align: left; ">Upcoming features</td>
+                            <td><span class="plan-feature__bullet_default">—</span></td>
+                            <td style=" background:#f5f6f7;">Unlimited Movies</td>
+                            <td><span class="plan-feature__bullet_default">—</span></td>
+                        </tr>
                       
                     </tbody>
                   </table>
             </div>
         </div>
-
+        
 
         <!-- footer -->
         <div class="myfooter">
